@@ -1,4 +1,4 @@
-/* nvd3 version 1.7.1(https://github.com/novus/nvd3) 2015-02-05 */
+/* nvd3 version 1.7.1(https://github.com/novus/nvd3) 2015-06-29 */
 (function(){
 
 // set up main nv object on window
@@ -882,7 +882,7 @@ nv.nearestValueIndex = function (values, searchVal, threshold) {
 
             while (purging.length) {
                 var removeMe = purging.pop();
-                removeMe.parentNode.removeChild(removeMe);
+                removeMe.parentNode && removeMe.parentNode.removeChild(removeMe);
             }
         }, 500);
     };

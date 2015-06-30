@@ -484,7 +484,7 @@
 
             while (purging.length) {
                 var removeMe = purging.pop();
-                removeMe.parentNode.removeChild(removeMe);
+                removeMe.parentNode && removeMe.parentNode.removeChild(removeMe);
             }
         }, 500);
     };
